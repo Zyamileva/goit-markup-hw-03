@@ -1,0 +1,181 @@
+:root {
+    --primary-font: "Roboto", sans-serif;
+    --logo-font: "Raleway", sans-serif;
+    --slate: #434455;
+    --navyblue: #2E2F42;
+    --white: #FFFFFF;
+    --iris: #4D5AE5;
+    --cloud: #F4F4FD;
+    --ocean: #404BBF;
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--slate);
+    background-color: var(--white);
+}
+
+.mail-tel {
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--slate);
+}
+
+.mail-tel:hover, .mail-tel:focus {
+    color: var(--ocean);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:active {
+    color: var(--ocean);
+}
+
+.logo {
+    font-family: var(--logo-font);
+    font-weight:800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris);
+}
+
+.header .span-header {
+    color: var(--navyblue);
+}
+
+.footer .span-footer {
+    color: var(--cloud);
+}
+
+.page-nave .link-nave {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--navyblue);
+}
+
+.page-nave .link-nave:hover {
+    color: var(--ocean);
+}
+
+.page-nave .link-nave:focus {
+    color: var(--ocean);
+}
+
+.address {
+    font-style: normal;
+}
+
+.sectio-one {
+    background-color: var(--navyblue);
+}
+
+.sectio-one .title {
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--white);
+}
+
+.sectio-one .button {
+    font-family: var(--primary-font);
+    background-color: var(--iris);
+    font-weight:500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.sectio-one .button:hover, .sectio-one button:focus{
+    background-color: var(--ocean);
+}
+
+.section-portfolio .button-item {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--iris);
+    background-color: var(--cloud);
+    text-align: center;
+    cursor: pointer;
+}
+
+.section-portfolio .button-item:hover, 
+.section-portfolio .button-item:focus {
+    color: var(--white);
+    background-color: var(--ocean);
+}
+
+.title-general {
+    font-weight:500;
+    font-size:20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navyblue);
+}
+
+.text-general {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+}
+
+.section-three .title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navyblue)
+    ;
+}
+
+.section-four {
+    background-color: var(--cloud);
+}
+
+.section-four .element {
+background-color: var(--white);
+}
+
+.section-four .title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navyblue);
+}
+
+.portfolio-menu .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navyblue);
+}
+
+.footer {
+    background-color: var(--navyblue);
+}
+
+.footer .text-finish {
+    line-height: 1.5;
+    color: var(--cloud);
+    letter-spacing: 0.02em;
+}

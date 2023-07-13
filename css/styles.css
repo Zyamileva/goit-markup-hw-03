@@ -9,20 +9,39 @@
     --ocean: #404BBF;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--primary-font);
     color: var(--slate);
     background-color: var(--white);
+    width: 1440px;
+    height: 2592px;
+    margin: 0;
+    padding: 0;
+    width: 1440px;
+    height: 2592px;
 }
 
-.mail-tel {
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--slate);
+h1, h2, h3, h4, h5,h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.mail-tel:hover, .mail-tel:focus {
-    color: var(--ocean);
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .list {
@@ -37,7 +56,37 @@ color: var(--slate);
     color: var(--ocean);
 }
 
-.logo {
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/** ------------------HEADER----------------- */
+
+.header  {
+    width: 1440px;
+    height: 72px;
+    flex-shrink: 0;
+    border-bottom: 1px solid var(--cornflower, #E7E9FC);
+    background: var(--white, #FFF);
+    margin: 0;
+    padding: 0; 
+    justify-content: space-between;
+        align-items: center;
+    
+}
+
+
+
+.header-logo {
     font-family: var(--logo-font);
     font-weight:800;
     font-size: 18px;
@@ -45,17 +94,34 @@ color: var(--slate);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris);
-}
 
-.header .span-header {
+
+    }
+
+    header-navigation {
+        display: inline-flex;
+            align-items: flex-start;
+            gap: 40px;
+            margin: 24px 832px 24px 347px;
+            width: 261px;
+            height: 24px;
+    }
+
+
+
+.header-logo-span {
     color: var(--navyblue);
+    display: flex;
+        width: 71px;
 }
 
-.footer .span-footer {
-    color: var(--cloud);
-}
+.navigation-list {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;}
 
-.page-nave .link-nave {
+
+.navigation-list-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -63,23 +129,43 @@ color: var(--slate);
     color: var(--navyblue);
 }
 
-.page-nave .link-nave:hover {
+.navigation-list-link:hover, .navigation-list-link:focus {
     color: var(--ocean);
 }
 
-.page-nave .link-nave:focus {
-    color: var(--ocean);
-}
-
-.address {
+.header-address {
     font-style: normal;
 }
 
-.sectio-one {
+.header-address-list {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+
+    
+}
+
+.header-address-list:hover, .header-address-list:focus {
+    color: var(--ocean);
+}
+
+.header .container {
+    display: flex;
+    width: 1440px;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/*! ------------------------section-one------------*/
+
+
+.section-one {
     background-color: var(--navyblue);
 }
 
-.sectio-one .title {
+.section-one-title {
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -87,7 +173,7 @@ color: var(--slate);
     color: var(--white);
 }
 
-.sectio-one .button {
+.section-one-btn {
     font-family: var(--primary-font);
     background-color: var(--iris);
     font-weight:500;
@@ -98,27 +184,11 @@ color: var(--slate);
     cursor: pointer;
 }
 
-.sectio-one .button:hover, .sectio-one button:focus{
+.section-one-btn:hover, section-one-btn:focus{
     background-color: var(--ocean);
 }
 
-.section-portfolio .button-item {
-    font-family: var(--primary-font);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--iris);
-    background-color: var(--cloud);
-    text-align: center;
-    cursor: pointer;
-}
-
-.section-portfolio .button-item:hover, 
-.section-portfolio .button-item:focus {
-    color: var(--white);
-    background-color: var(--ocean);
-}
+/*!--------------------------section-two----------------*/
 
 .title-general {
     font-weight:500;
@@ -135,7 +205,9 @@ color: var(--slate);
     color: var(--slate);
 }
 
-.section-three .title {
+/*!------------------------section-three-------------------*/
+
+.section-three-title {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -145,15 +217,17 @@ color: var(--slate);
     ;
 }
 
+/*!------------------------section-four------------------*/
+
 .section-four {
     background-color: var(--cloud);
 }
 
-.section-four .element {
+.section-four-item {
 background-color: var(--white);
 }
 
-.section-four .title {
+.section-four-title {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -162,20 +236,55 @@ background-color: var(--white);
     color: var(--navyblue);
 }
 
-.portfolio-menu .title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--navyblue);
-}
+/*!------------------------footer-------------------*/
 
 .footer {
     background-color: var(--navyblue);
 }
 
-.footer .text-finish {
+.footer-logo-link {
+    font-family: var(--logo-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris);
+}
+
+.foote-logo-span {
+    color: var(--cloud);
+}
+
+.footer-logo-text {
     line-height: 1.5;
     color: var(--cloud);
     letter-spacing: 0.02em;
+}
+
+/*!------------------------section--portfolio-------------------*/
+
+.portfolio-menu-item-btn {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--iris);
+    background-color: var(--cloud);
+    text-align: center;
+    cursor: pointer;
+}
+
+.portfolio-menu-item-btn:hover, .portfolio-menu-item-btn:focus {
+    color: var(--white);
+    background-color: var(--ocean);
+}
+
+.portfolio-item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navyblue);
 }

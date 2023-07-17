@@ -45,21 +45,6 @@ img {
     padding-right: 15px;
 }
 
-.reviews{
-    padding-top: 60px;
-    padding-bottom: 120px;
-}
-
-.benefits {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.benefits-footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
 .list {
     list-style: none;
 }
@@ -91,6 +76,7 @@ img {
     padding-bottom: 24px;
     padding-left: 0px;
     padding-right: 0px;
+    border-bottom: 1px solid #e7e9fc;
 }
 .header_container {
     display: flex;
@@ -145,6 +131,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--slate);
     display: flex;
+    gap: 40px;
 }
 
 .header-address-list:hover, .header-address-list:focus {
@@ -215,6 +202,10 @@ margin-left: 40px;
     color: var(--slate);
 }
 
+.section-two {
+    padding: 120px 0;
+}
+
 .section-two-list {
     display: flex;
     gap: 24px;
@@ -249,13 +240,14 @@ margin-left: 40px;
 }
 
 .section-three-element {
-    max-width: calc((100% - 3 * 24px) / 3);
+    flex-basis: calc((100% - 3 * 24px) / 3);
 }
 
 /*!------------------------section-four------------------*/
 
 .section-four {
     background-color: var(--cloud);
+    padding: 120px 0;
 }
 
 .section-four-list {
@@ -290,6 +282,7 @@ margin-left: 40px;
 
 .footer {
     background-color: var(--navyblue);
+    padding: 100px 0;
 }
 
 .footer-logo-link {
@@ -350,6 +343,7 @@ margin-left: 40px;
 .portfolio-menu-item-btn:focus {
     color: var(--white);
     background-color: var(--ocean);
+    border: 1px solid transparent;
 }
 
 .portfolio-list {
@@ -380,5 +374,5 @@ border-top:none;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navyblue);
-    margin-top: 8px;
+    margin-bottom: 8px;
 }

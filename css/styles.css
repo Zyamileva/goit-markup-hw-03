@@ -72,8 +72,6 @@ img {
 
 /** ------------------HEADER----------------- */
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
     padding-left: 0px;
     padding-right: 0px;
     border-bottom: 1px solid #e7e9fc;
@@ -109,6 +107,10 @@ img {
     gap: 40px;
 }
 
+.navigation-list-item {
+    padding: 24px 0;
+}
+
 .navigation-list-link {
     font-weight: 500;
     font-size: 16px;
@@ -127,11 +129,14 @@ img {
 }
 
 .header-address-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header-address-link {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
-    display: flex;
-    gap: 40px;
 }
 
 .header-address-list:hover, .header-address-list:focus {
